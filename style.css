@@ -14,15 +14,12 @@
 #logo{
     font-size: 36px;
     font-weight: 550;
-    color: #7ab730;
+    color: #007FFF;
     text-shadow: 0px 1px 1px black;
     margin-bottom: 5px;
 }
-#logo span{
-    color: #7ab730;
-}
 .navbar-toggler span{
-    color: #7ab730;
+    color: #007FFF;
 }
 .navbar-nav{
     margin-left: 20px;
@@ -36,11 +33,11 @@
     transition: 0.5s ease;
 }
 .nav-item .nav-link:hover{
-    background: #7ab730;
+    background: #007FFF;
     color: white;
 }
 #navbar form button{
-    background: #7ab730;
+    background: #007FFF;
     color: white;
     border: none;
 }
@@ -49,7 +46,7 @@
 .home{
     width: 100%;
     height: 90vh;
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(./images/background\ img.png);
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(./images/daniela-cuevas-t7YycgAoVSw-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -70,25 +67,7 @@
     text-shadow: 0px 1px 1px black;
     margin-top: 5px;
 }
-/* .changecontent::after{
-    content: ' ';
-    color: #7ab730;
-    text-shadow: 0px 1px 1px black;
-    animation: changetext 10s infinite linear;
-}
-@keyframes changetext{
-    0%{content: "France";}
-    10%{content: "Spain";}
-    20%{content: "United States";}
-    30%{content: "China";}
-    40%{content: "India";}
-    50%{content: "Pakistan";}
-    60%{content: "Italy";}
-    70%{content: "Turkey";}
-    80%{content: "Mexico";}
-    90%{content: "Germany";}
-    100%{content: "United kingdom";}
-}  */
+
 .home .content p{
     color: white;
     font-size: 15px;
@@ -108,7 +87,7 @@
     transition: 0.5s;
 }
 .home .content a:hover{
-    background: #7ab730;
+    background: #007FFF;
     color: white;
 }
 @media (max-width:850px){
@@ -152,7 +131,7 @@
     height: 38px;
     border: none;
     border-radius: 5px;
-    background: #7ab730;
+    background: #007FFF;
     color: white;
     letter-spacing: 2px;
     font-weight: 550;
@@ -160,7 +139,7 @@
     cursor: pointer;
 }
 #about-btn:hover{
-    background: #4e8709;
+    background: #007FFF;
 }
 @media (max-width:765px){
     .about{
@@ -169,69 +148,93 @@
 }
 /* About End */
 /* Section Book Start */
-.book{
+.book {
     background: #f9f9f9;
-    padding: 50px;
-}
-.main-text h1{
+    padding: 50px 20px; 
+    position: relative;
+    min-height: 500px; 
+  }
+  
+  .main-text h1 {
     text-align: center;
-    text-shadow: 0px 1px 1px #7ab730;
+    text-shadow: 0px 1px 1px #007FFF;
     font-weight: 600;
-}
-
-.book .card{
+  }
+  
+  .book .card {
     border-radius: 10px;
     box-shadow: 0px 5px 5px -6px black;
-}
-.book .row{
-    margin-top: 30px;
-}
-.book form input{
-    padding: 10px;
-    color: black;
-    border: none;
-    outline: none;
-    font-size: 15px;
+    overflow: hidden; 
+  }
+  
+  .book .card img {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .book .form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
-    box-shadow: 0px 5px 5px -6px black;
-}
-.book form textarea{
-    border: none;
-    border-radius: 10px;
-    resize: none;
-    box-shadow: 0px 5px 5px -6px black;
-    height: 200px;
-}
-.book .submit{
-    width: 160px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .book form input,
+  .book form textarea {
+    width: calc(100% - 20px); 
+    margin-bottom: 10px; 
+  }
+  
+  .book .submit {
+    width: 100%;
     font-size: 16px;
     font-weight: 550;
-    background: #7ab730;
+    background: #007FFF;
     color: white;
     margin-top: 10px;
     transition: 0.5s;
-}
-.book .submit:hover{
-    background: #4e8709;
-}
-@media (max-width:765px){
-    .book{
-        padding: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .book .form-container {
+      max-width: 800px;
+      width: 100%;
+      margin: 0 auto; 
     }
-    .main-text h1{
-        padding: 20px;
+  }
+  
+  @media (max-width: 575px) {
+    .book .card {
+      margin-bottom: 20px;
     }
-}
-/* Section Book End */
+  
+    .book .form-container {
+      margin-top: 20px; 
+      padding: 0px; 
+    }
+  
+    .book form input,
+    .book form textarea {
+      width: calc(100% - 20px); 
+    }
+  }
+  /* Section Book End */
+  
+
+
+
+
+
 /* Section Packages Start */
 .main-txt h1{
     text-align: center;
     margin-top: 30px;
     font-weight: 600;
     text-shadow: 0px 1px 1px black;
-}
-.main-txt h1 span{
-    color: #7ab730;
 }
 .packages .card{
     border-radius: 5px;
@@ -252,7 +255,7 @@
     font-size: 15px;
 }
 .checked{
-    color: #7ab730;
+    color: #dcca0f;
 }
 .star i{
     font-size: 15px;
@@ -263,33 +266,58 @@
 .packages .card .card-body a{
     padding: 10px;
     text-decoration: none;
-    background: #7ab730;
+    background: #007FFF;
     color: white;
     border-radius: 5px;
 }
 /* Section Packages End */
 /* Section Services Start */
-.services{
+
+#services {
+    padding: 50px;
     background: #f9f9f9;
-    margin-top: 50px;
 }
-.services .card{
-    box-shadow: rgba(0,0,0,0.1) 0px 4px 12px;
+.text-muted {
+    text-align: center;
+    margin-top: 30px;
+    color: black; 
+    font-family: 'Lato', sans-serif; 
+    text-shadow: 0px 1px 1px black; 
+}
+
+.service-card {
     border: none;
-    cursor: pointer;
+    transition: transform 0.2s;
 }
-.services .card i{
-    font-size: 80px;
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-card .card-body {
     text-align: center;
-    color: #7ab730;
-    margin-top: 20px;
 }
-.services .card .card-body h3{
+
+.service-card .card-title {
+    font-size: 20px;
     font-weight: 600;
+    margin-top: 10px;
+    color: black;
 }
-.services .card .card-body{
-    text-align: center;
+
+.service-card .card-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #555555;
 }
+
+.service-card img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+
 /* Section Services End */
 /* Section Gallary Start */
 .gallary{
@@ -321,9 +349,6 @@
     padding-top: 30px;
     text-shadow: 0px 0px 1px black;
 }
-#footer h1 span{
-    color: #7ab730;
-}
 .social-links i{
     padding: 10px;
     border-radius: 5px;
@@ -336,6 +361,6 @@
     cursor: pointer;
 }
 .social-links i:hover{
-    background: #7ab730;
+    background: #007FFF;
 }
 /* Footer End */
